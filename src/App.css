@@ -1,5 +1,47 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,body{
+  background:#ebf7ff;
+}
+hr{
+  height: 0.2rem;
+    background: #0591f5;
+    border: none;
+    margin-top: -6px;
+    width: 5rem;
+}
+.mycontainer{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  place-items:center;
+  
+}
+.card-img-top{
+  height:250px;
+}
+.price{
+  position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 65px;
+    background: #0591f5;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    font-weight:bolder;
+}
+@media only screen and (max-width: 767px) {
+  .mycontainer{
+    display:grid;
+    grid-template-columns:1fr;
+    margin:0 auto;
+  }
+  .card{
+    width:18rem !important;
+  }
 }
